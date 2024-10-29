@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+</head>
+<body>
+
+<ul>
+  <li th:each="note : ${notes}" th:text="${note.content}"></li>
+</ul>
+
+<form action="/note" method="post">
+  <input type="text" placeholder="Message" name="content">
+  <button>Add</button>
+</form>
+</body>
+</html>
