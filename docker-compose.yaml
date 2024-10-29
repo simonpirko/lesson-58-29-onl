@@ -1,6 +1,7 @@
 services:
   app:
     restart: always
+    image: lesson-58-29-onl-app
     build:
       context: .
     container_name: app
