@@ -23,6 +23,8 @@ public class NoteController {
     @Autowired
     private NoteRepository noteRepository;
 
+
+
     @GetMapping
     public String getNote(Model model) {
         List<Note> all = noteRepository.findAll();
