@@ -1,7 +1,7 @@
 services:
   app:
     restart: always
-    image: lesson-58-29-onl-app
+    image: test:latest
     build:
       context: .
     container_name: app
